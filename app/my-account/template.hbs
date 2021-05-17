@@ -1,18 +1,34 @@
 <main id="content">
   <ns-landmark type="hillside" gradient="invert-ramp-cyan">
     <h1 slot="heading">
-      <span class="h5">My Account Dashboard</span>
-      <span class="h1"></span>
+      <span class="h5">Manage your account</span>
+      <span class="h1">Account Dashboard</span>
     </h1>
     <div slot="paragraph">
       <p></p>
     </div>
   </ns-landmark>
 
+  
   <ns-panel>
-    <ul>
-      <li><LinkTo @route="account-details">Account Details</LinkTo></li>
-    </ul>
+    <div class="splash triple" role="list">
+      <ns-card role="listitem" type="support" image="aem6/content/dam/britishgas/beta/images/child-with-laptop-640x360.png">
+        <h3 slot="heading" role="heading" aria-level="3">
+          Your Account Details
+        </h3>
+        <p slot="paragraph">
+          
+        </p>
+        
+        <div slot="cta">
+          <LinkTo @route="my-account.account-details">
+            <ns-cta type="text">
+              Update my details
+            </ns-cta>
+          </LinkTo>
+        </div>
+      </ns-card>
+    </div>
   </ns-panel>
 </main>  
 
